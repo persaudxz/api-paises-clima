@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buscar País</title>
+</head>
+<body style="font-family: Arial; text-align:center; margin-top:50px;">
+
+<h1>Buscar País</h1>
+
+<p style="color:red;" th:if="${erro}" th:text="${erro}"></p>
+
+<form action="/buscar" method="post">
+    <input type="text" name="nome" placeholder="Digite um país" style="padding:10px;">
+    <button type="submit" style="padding:10px;">Buscar</button>
+</form>
+
+</body>
+</html>
